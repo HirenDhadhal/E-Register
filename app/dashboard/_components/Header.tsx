@@ -1,5 +1,7 @@
+'use client';
 import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs';
 import React from 'react';
+import Image from 'next/image';
 
 const Header = () => {
   const { user } = useKindeBrowserClient();

@@ -1,4 +1,4 @@
-import Grade from '@/app/_models/mongoDBSchema';
+import { Grade } from '@/app/_models/mongoDBSchema';
 import { connectToDB } from '@/lib/mongoDB';
 import { NextResponse } from 'next/server';
 
@@ -16,6 +16,7 @@ export async function POST(request: {
       message: 'Grade has been created successfully',
     });
   } catch (err) {
+    console.log('errrr');
     return NextResponse.json({ message: err });
   }
 }
